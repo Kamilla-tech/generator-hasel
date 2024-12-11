@@ -32,7 +32,8 @@
           <input type="checkbox" v-model="polishChars">
         </div>
       </div>
-      <button @click="generatePassword" class="btn generate">Wygeneruj hasło</button>
+      <button :disabled="!uppercase && !lowercase && !numbers && !numbers && !symbols && !polishChars" 
+              @click="generatePassword" class="btn generate">Wygeneruj hasło</button>
     </div>
   </div>
 </template>
