@@ -3,7 +3,7 @@
     <h3>Generator hasła</h3>
     <div class="result-container">
       <input v-model="password" type="text" readonly placeholder="Wygeneruj hasło">
-      <button class="btn" @click="copyToClipboard">&#x2398;</button>
+      <button :disabled="!password.length" class="btn" @click="copyToClipboard">&#x2398;</button>
     </div>
     <div class="settings">
       <div class="password-length">
@@ -180,5 +180,8 @@ export default {
     justify-content: space-between;
     align-items: center;
     margin: 5px 0;
+  }
+  .btn:disabled{
+    opacity: 0.8;
   }
 </style>
