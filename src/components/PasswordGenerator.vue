@@ -2,7 +2,7 @@
   <div class="generator-container">
     <h3>Generator hasła</h3>
     <div class="result-container">
-      <input v-model="password" type="text" readonly>
+      <input v-model="password" type="text" readonly placeholder="Wygeneruj hasło">
       <button class="btn" @click="copyToClipboard">&#x2398;</button>
     </div>
     <div class="settings">
@@ -38,6 +38,8 @@
 </template>
 
 <script>
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
 export default {
   data() {
     return {
@@ -83,6 +85,9 @@ export default {
     copyToClipboard() {
       navigator.clipboard.writeText(this.password).then(() => {
         console.log("Hasło skopowano do schowka");
+        toast("Hasło skopowano do schowka", {
+          autoClose: 1000,
+        });
       });
     }
   }
