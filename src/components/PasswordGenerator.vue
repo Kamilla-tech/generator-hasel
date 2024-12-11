@@ -8,7 +8,7 @@
     <div class="settings">
       <div class="password-length">
         <label for="length">Długość hasła</label>
-        <input type="number" v-model="length" min="7" max="100">
+        <input type="number" v-model="length" min="7" max="50">
       </div>
       <div class="options">
         <div class="option">
@@ -32,7 +32,7 @@
           <input type="checkbox" v-model="polishChars">
         </div>
       </div>
-      <button :disabled="!uppercase && !lowercase && !numbers && !numbers && !symbols && !polishChars" 
+      <button :disabled="!uppercase && !lowercase && !numbers && !numbers && !symbols && !polishChars || (length < 7 || length > 50) " 
               @click="generatePassword" class="btn generate">Wygeneruj hasło</button>
     </div>
   </div>
