@@ -87,6 +87,9 @@ export default {
         console.log("Hasło skopowano do schowka");
         toast("Hasło skopowano do schowka", {
           autoClose: 1000,
+          position: "bottom-right",
+          theme: "colored",
+          type: "success"
         });
       });
     }
@@ -100,7 +103,7 @@ export default {
     padding: 20px;
     width: 360px;
     background-color: #41b884;
-    color: #000;
+    color: white;
     box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.3);
   }
   
