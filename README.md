@@ -1,4 +1,19 @@
-# generator-hasel
+# Generator haseł
+
+Aplikacja webowe generująca hasło. Użytkownik może ustawić zakres znaków jakie 
+mogą występować w haśle.
+
+Opcje:
+- Długość hasła
+- Duże litery
+- Liczby
+- Małe litery
+- Symbole
+- Polskie znaki
+
+
+Minimalna długość hasła 7. Maksymalna 50.
+
 
 ## Project setup
 ```
