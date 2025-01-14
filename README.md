@@ -13,6 +13,10 @@ A web application that generates passwords. The user can set the range of charac
 
 The minimum password length is 7, and the maximum is 50.
 
+Demo:
+
+https://generator-hasel.kamila-tech.pl
+
 ## Project setup
 ```
 npm install
