@@ -1,19 +1,17 @@
-# Generator haseł
+# **Password Generator**
 
-Aplikacja webowe generująca hasło. Użytkownik może ustawić zakres znaków jakie 
-mogą występować w haśle.
+A web application that generates passwords. The user can set the range of characters that may appear in the password.
 
-Opcje:
-- Długość hasła
-- Duże litery
-- Liczby
-- Małe litery
-- Symbole
-- Polskie znaki
+**Options:**
+- Password length
+- Uppercase letters
+- Numbers
+- Lowercase letters
+- Symbols
+- Polish characters
 
 
-Minimalna długość hasła 7. Maksymalna 50.
-
+The minimum password length is 7, and the maximum is 50.
 
 ## Project setup
 ```
